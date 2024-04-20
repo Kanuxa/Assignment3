@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hour of Code</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/team.css">
+    <script defer src="./scripts/script.js"></script>
+</head>
+<body>
+    <nav>
+        <a class="logo" href="index.html">
+            <img src="./images/shared/logo.jpg" alt="Logo">
+        </a>
+        <ul class="navList">
+            <li class="navItem">
+                <a href="index.html" class="navLink">Home</a>
+            </li>
+            <li class="navItem">
+                <a href="Team.html" class="navLink">Team</a>
+            </li>
+            <li class="navItem">
+                <a href="HourOfCode.html" class="navLink">Hour of Code</a>
+            </li>
+            <li class="navItem">
+                <a href="Website.html" class="navLink">Website</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="bg">
+        <div class="overlay"></div>
+    </div>
+    
+    <header>Team</header>
+
+    <section class="teamMembers">
+        <div class="member">
+            <img id="member1" class="memberPhoto" src="./images/members/Kanan.jpg" alt="Kanan">
+        </div>
+        <div class="member">
+            <img id="member2" class="memberPhoto" src="./images/members/Murad.jpg" alt="Murad">
+        </div>
+        <div class="member">
+            <img id="member3" class="memberPhoto" src="./images/members/unknown.jpg" alt="Aykhan">
+        </div>
+        <div class="member">
+            <img id="member4" class="memberPhoto" src="./images/members/unknown.jpg" alt="Davud">
+        </div>
+    </section>
+
+    <div id="popup" class="popup">
+        <button id="closeButton">✕</button>
+        <div class = "popupBody">
+            <div class="popupPhoto" id="popupPhoto"></div>
+            <div class="popupInfo">
+                <h1 id="popupName" style="color: rgb(203, 62, 62);"></h1>
+                <h3 id="popupUni" style="color: rgb(62, 187, 203);"></h3>
+                <h4 id="popupSchool" style="color: rgb(62, 187, 203);"></h4>
+                <p id="popupEmail"></p>
+                <p id="popupPhone"></p>
+            </div>
+        </div>
+        <p id="popupBio" class="popupBio"></p>
+    </div>
+
+</body>
+</html>

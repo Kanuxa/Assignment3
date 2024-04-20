@@ -1,0 +1,12 @@
+section{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+}
+
+.sectionText{
+    font-size: 22px;
+    line-height: 30px;
+    text-align: justify;
+    margin: 20px;
+}

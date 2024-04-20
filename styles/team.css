@@ -1,0 +1,98 @@
+.teamMembers{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.member{
+    width: 250px;
+    aspect-ratio: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.memberPhoto{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.memberPhoto:hover{
+    transform: scale(1.1);
+}
+
+.popup{
+    display: none;
+    position: absolute;
+    width: 80%;
+    height: 60vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    background-image: linear-gradient(rgb(10, 44, 77), rgb(57, 113, 168));
+    padding: 20px 50px;
+    padding-top: 70px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: scroll;
+    z-index: 5;
+}
+
+.popup button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 40px;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 50%;
+    font-size: 25px;
+    background: red;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.popup button:hover{
+    background: rgb(225, 1, 1);
+}
+
+.popupBody{
+    width: 100%;
+    display: flex;
+}
+
+.popupPhoto{
+    width: 300px;
+    aspect-ratio: 1;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.popupPhoto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popupInfo{
+    margin-left: 20px;
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+}
+
+.popupBio{
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}

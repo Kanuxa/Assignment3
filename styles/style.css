@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url(../images/shared/background.jpeg);
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+.overlay{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 242, 242, 0.8);
+}
+
+nav {
+    width: 100%;
+    height: fit-content;
+    padding: 35px 0;
+    background: rgb(10, 44, 77);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    aspect-ratio: 2/1;
+    margin: 0 20px 0 40px;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.navList{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.navItem{
+    transition: 0.4s;
+}
+
+.navItem:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.navLink{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 4px;
+    transition: 0.4s;
+}
+
+.navLink:hover{
+    color: rgb(222, 222, 222);
+    border-bottom: solid rgb(222, 222, 222) 2px;
+}
+
+.active {
+    border-bottom: solid white 2px;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.page{
+    display: flex;
+}
+
+.menu{
+    background: rgba(255, 255, 255, 0.5);
+    width: 200px;
+    min-width: 170px;
+    min-height: 100%;
+    border-right: solid black 1px;
+}
+
+.menu ol{
+    height: calc(100vh - 150px);
+    position: fixed;
+    margin-left: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.menu ol a{
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 16px;
+    color: white;
+    background: rgb(7, 7, 135);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.menu ol a:hover{
+    background: rgb(11, 11, 198);
+}
+
+.sectionHeading{
+    line-height: 30px;
+    font-size: 30px;
+    color: rgb(7, 7, 135);
+}
+
+.references{
+    width: 100%;
+    border-top: solid black 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.references ul{
+    width: 90%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.references ul li{
+    margin: 10px 0;
+}
